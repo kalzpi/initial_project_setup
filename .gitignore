@@ -122,3 +122,5 @@ dmypy.json
 #User Custom
 node_modules/
 .env
+uploads/
+study.txt

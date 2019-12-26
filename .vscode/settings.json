@@ -2,5 +2,6 @@
     "python.pythonPath": "C:\\Users\\D01-048\\.virtualenvs\\py37_django_test-mCYnjzVD\\Scripts\\python.exe",
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black"
 }
