@@ -14,6 +14,8 @@ class Roll(core_models.TimeStampedModel):
         "projects.Project", related_name="rolls", on_delete=models.SET_NULL, null=True
     )
 
+    specific_design = models.OneToOneField("designs.SpecificDesign", related_name="rolls", on_delete=models.SET_NULL, blank=True, null=True)
+
     TYPE_SUB = "sub"
     TYPE_MAIN = "main"
     TYPE_CHOICES = ((TYPE_SUB, "SUB"), (TYPE_MAIN, "MAIN"))
@@ -49,8 +51,7 @@ class Roll(core_models.TimeStampedModel):
             self.body == self.steam_shaft
             or self.steam_shaft == self.gear_shaft
             or self.gear_shaft == self.body
-        ):
+        ) and self.body is not None:
             raise ValidationError(_("Multiple usage of a material"),)
         else:
-            print("Perfect!")
             super().save(*args, **kwargs)  # call the real save method

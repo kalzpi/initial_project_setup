@@ -1,1 +1,15 @@
-<div class="">This are will be the NAV bar.</div>
+{% load i18n %}
+{% load static %}
+<div class="nav flex justify-between h-16">
+    <a href="{% url 'core:dashboard' %}" class="nav__logo"></a>
+    <div class="nav__linkbox flex">
+        <a href="{% url 'users:switch-lang' %}">
+            {% get_current_language as LANGUAGE_CODE %}
+            {{LANGUAGE_CODE}}
+        </a>
+        <div class="nav__linkbox__link ml-2">Log In</div>
+        <div class="nav__linkbox__link ml-2">Log Out</div>
+        <div class="nav__linkbox__link ml-2">Sign Up</div>
+    </div>
+
+</div>

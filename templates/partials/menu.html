@@ -1,0 +1,12 @@
+{% load i18n %}
+
+<ul class="menu flex-col border-r-2">
+    {% include 'mixins/userprofile.html' %}
+    <li class="menu-link"><a href="{% url 'core:dashboard' %}">{% trans 'Dashboard' %}</a></li>
+    <li class="menu-link"><a href="{% url 'projects:list' %}">{% trans 'Projects' %}</a></li>
+    <li class="menu-link clicked"><a href="{% url 'projects:list' %}">{% trans 'Clients' %}</a></li>
+    <li class="menu-link"><a href="{% url 'projects:list' %}">{% trans 'Designs' %}</a></li>
+    <li class="menu-link"><a href="{% url 'projects:list' %}">{% trans 'Materials' %}</a></li>
+    <li class="menu-link"><a href="{% url 'projects:list' %}">{% trans 'Quality Control' %}</a></li>
+    <li class="menu-link"><a href="{% url 'projects:list' %}"> {{request.path}} </a></li>
+</ul>

@@ -1,0 +1,12 @@
+{% load static %}
+{% load i18n %}
+<div class="flex w-full justify-center py-6 border-b-2 border-gray-800">
+    <img class="h-20 w-20 bg-gray-300 rounded mr-6" src="{% static 'img/default_profile.png' %}" alt="">
+    <div class="flex-col my-auto">
+        <div class="font-medium text-gray-300 mb-3">Yunho, Huh(허윤호)</div>
+        <button class="profile-btn flex items-center justify-center mx-auto py-1 px-3">
+            <i class="fas fa-cog mr-2"></i>
+            <span class="font-light text-xs text-gray-400"> {% trans 'Edit Profile' %} </span>
+        </button>
+    </div>
+</div>

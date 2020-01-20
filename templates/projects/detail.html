@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+    {% block title %}
+            
+    {% endblock title %}
+    {% block content %}
+        <div class="project-area w-full h-64 bg-indigo-400">
+            <div class="">{{project.client}}</div>
+            <div class="">{{project.name}}</div>
+            <div class="">{{project.initiator}}</div>
+        </div>
+        <div class="roll-area w-full h-64 bg-purple-400 flex-col">           
+            {% for roll in project.rolls.all %}
+                <div>{{roll.specific_design.base_design}} {{roll.roll_type}} | {{roll.specific_design.lot_no}} | </div>
+            {% endfor %}
+        </div>
+    {% endblock content %}

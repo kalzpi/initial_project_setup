@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
+
+.menu {
+  background-color: #242e3a;
+  width: 320px;
+}
+
+.profile-btn {
+  box-shadow: rgba(#fff, 0.15) 0 1px 0px 0px inset,
+    rgba(#fff, 0.05) 0 1px 0px 1px inset, rgba(#000, 0.7) 0 1px 2px 0px,
+    rgba(#090909, 0.6) 0 2px 3px 2px;
+  background-color: #343434;
+  background-image: linear-gradient(
+    to-top,
+    rgba(#4e4e4e, 0.15) 0%,
+    rgba(#414141, 0.15) 2%,
+    rgba(#3b3b3b, 0.15) 5%,
+    rgba(#383838, 0.15) 32%,
+    rgba(#363636, 0.15) 33%,
+    rgba(#353535, 0.15) 46%,
+    rgba(#333333, 0.15) 47%,
+    rgba(#323232, 0.15) 60%,
+    rgba(#303030, 0.15) 61%,
+    rgba(#2a2a2a, 0.15) 100%
+  );
+  text-shadow: #000 0 -1px 0;
+  color: rgba(#fff, 0.85);
+  &:hover {
+    box-shadow: rgba(#fff, 0.05) 0 1px 0px 0px inset,
+      rgba(#fff, 0.02) 0 1px 0px 1px inset, rgba(#090909, 0.5) 0 2px 2px 1px;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+    box-shadow: none;
+  }
+
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+.menu-link {
+  text-shadow: 0 2px 3px #242e3a;
+  @apply text-center flex h-16 border-b-2 border-gray-800 text-gray-500;
+  a {
+    @apply h-full w-full flex items-center justify-center;
+  }
+
+  &:hover {
+    box-shadow: rgba(#090909, 0.5) 0 1px 1px 1px;
+    opacity: 0.8;
+  }
+}
+
+.menu-link.clicked {
+  border-left: 4px solid #4fd1c5;
+  @apply text-gray-300;
+}
+
 @tailwind utilities;

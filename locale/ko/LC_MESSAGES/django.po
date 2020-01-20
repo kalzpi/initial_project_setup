@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-03 15:09+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\rolls\models.py:55
+msgid "Multiple usage of a material"
+msgstr ""
+
+#: .\templates\mixins\userprofile.html:9
+msgid "Edit Profile"
+msgstr "프로필 수정"
+
+#: .\templates\partials\footer.html:2
+msgid "This Area is footer area."
+msgstr "이 영역은 Footer 영역입니다."
+
+#: .\templates\partials\menu.html:5
+msgid "Dashboard"
+msgstr "대시보드"
+
+#: .\templates\partials\menu.html:8
+msgid "Projects"
+msgstr "프로젝트"
+
+#: .\templates\partials\menu.html:11
+msgid "Clients"
+msgstr "고객관리"
+
+#: .\templates\partials\menu.html:12
+msgid "Designs"
+msgstr "설계관리"
+
+#: .\templates\partials\menu.html:13
+msgid "Materials"
+msgstr "소재관리"
+
+#: .\templates\partials\menu.html:14
+msgid "Quality Control"
+msgstr "품질관리"

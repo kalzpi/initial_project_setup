@@ -1,15 +1,15 @@
 {
-  "name": "airbnb-clone",
+  "name": "initial_project_setup",
   "version": "1.0.0",
-  "description": "Cloning Airbnb using Python, Django, Tailwind and more...",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kalzpi/airbnb-clone.git"
+    "url": "git+https://github.com/kalzpi/initial_project_setup.git"
   },
   "scripts": {
     "css": "gulp"
   },
-  "homepage": "https://github.com/kalzpi/airbnb-clone#readme",
+  "homepage": "https://github.com/kalzpi/initial_project_setup#readme",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.3",

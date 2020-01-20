@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+    {% block title %}
+            
+    {% endblock title %}
+    
+    {% block content %}
+        <div class="list flex-col">
+            {% for project in object_list %}
+                <a href="{{project.get_absolute_url}}"><div class="">{{project.name}} // {{project.initiator}} // {{project.client}} // 
+                    {% for roll in project.rolls.all %}
+                        {{roll.specific_design}}
+                    {% endfor %}
+                    </div></a>
+            {% endfor %}
+        </div>
+        
+        <div class="paginator">    
+            
+            {% if page_obj.has_previous %}
+                <a href="?page={{page_obj.previous_page_number}}" class="previous-page">Prev</a>
+            {% endif %}
+                
+            
+            {% for number in page_obj.paginator.page_range %}
+                <a href="?page={{number}}" class="">{{number}}</a>
+            {% endfor %}
+            
+            {% if page_obj.has_next %}
+                <a href="?page={{page_obj.next_page_number}}" class="next-page">Next</a>                
+            {% endif %}
+        </div>
+            
+    {% endblock content %}
